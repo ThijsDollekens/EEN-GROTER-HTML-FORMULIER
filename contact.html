@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- hier zet je de code in de head tags -->
+        <title> Contact formulier </title>
+    </head>
+    <body>
+       <!-- hier zet je de code in de body tags-->
+       
+       <a href="index.html">
+        <h2>Terug</h2>
+      </a>
+
+      <form name="contact" method="POST" data-netlify="true">
+        
+        <p> <!-- naam-->
+          <label>Naam: <input type="text" name="name" /></label>   
+        </p>
+        
+        <p><!--email-->
+          <label>Email: <input type="email" name="email" /></label>
+        </p>
+        
+        <p>   <!--telefoonnummer (tel)-->
+            <label>Telefoonnummer: <input type="number" name="telefoonnummer" /></label>
+        </p>
+       
+        <p>  <!--leeftijd-->
+            <label>Leeftijd (hele jaren): <input type="number" name="Leeftijd" /></label>
+        </p>
+
+        <p>   <!--geboortedatum-->
+            <label>Geboortedatum: <input type="date" name="Geboortedatum" /></label>
+        </p>
+
+        <p>   <!--gender (radiobuttons)-->
+            <label>Gender: </label>
+            <label>Man: <input type="radio" id="Man" name="Man" /></label>
+            <label>Vrouw: <input type="radio" id="Vrouw" name="Vrouw" /></label>
+        </p>
+
+        <p>   <!--favoriete cuisine: frans, italiaans, spaans of arabisch (checkbox)-->
+            <label>Favoriete cuisine:</label>
+            <label>Frans: <input type="checkbox" id="Frans" name="Frans" /></label>
+            <label>Italiaans: <input type="checkbox" id="Italiaans" name="Italiaans" /></label>
+            <label>Spaans: <input type="checkbox" id="Spaans" name="Spaans" /></label>
+            <label>Arabisch: <input type="checkbox" id="Arabisch" name="Arabisch" /></label>
+        </p>
+
+        <p>  <!--favoriete kleur van schort (colorpicker)-->
+            <label>Favoriete kleur schort: <input type="color" name="Kleur" /></label>
+        </p>
+        
+        <p><!--biografie (text-area)-->
+          <label>Biografie: <textarea name="Biografie"></textarea></label>
+        </p>
+
+        <p>  <!--upload je laatste recept (upload een file)-->
+            <label>Laatste recept: <input type="file" name="Recept" /></label>
+        </p>
+        
+        <p>  <!--url naar je recepten website (url)-->
+            <label>URL naar recepten website: <input type="url" name="Recept site" /></label>
+        </p>
+        
+        <p><!--een button van het type "reset" om het formulier leeg te kunnen maken-->
+            <button type="reset">Reset</button>
+        </p>
+        
+        <p><!--een button van het type "submit" om het formulier te kunnen verzenden-->
+          <button type="submit">submit</button>
+        </p>
+      </form>
+       
+    </body>
+</html>
